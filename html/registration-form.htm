@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../img/tab-logo.png" type="image/x-icon" />
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/6342bc0aa2.js" crossorigin="anonymous"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../styles/home.css">
+    <link rel="stylesheet" href="../styles/registration.css">
+    <!-- <link rel="stylesheet" href="../styles/signin.css"> -->
+    <title>Netflix Ethiopia - Watch TV Shows Online, Watch Movies Online</title>
+</head>
+
+<body class="registration-form">
+    <!-- Navbar -->
+    <nav>
+        <div class="logo">
+            <a href="home.htm"><img src="../img/logo.png" alt=""></a>
+        </div>
+        <div class="sign-in">
+            <button onclick="openSignInPage()">Sign In</button>
+        </div>
+    </nav>
+
+    <!-- Registration -->
+    <div class="container">
+        <form class="registration form">
+            <p class="line-1">Step <span>2</span> of <span>3</span></p>
+            <p class="line-2">Create a password to start<br> your membership
+            <p class="line-3">
+                Just a few more steps and you're done!<br>
+                We hate paperwork, too.
+            </p>
+            <div class="email">
+                <input type="email" id="registration-email" placeholder=" ">
+                <label for="email">Email or mobile number</label>
+            </div>
+            <div class="password">
+                <input type="password" id="registration-password" placeholder=" ">
+                <label for="email">Password</label>
+            </div>
+            <label>
+                <input type="checkbox" value="remeber-me">
+                Please do not email me Netflix special offers
+            </label>
+            <button type="submit" class="next-step-2">Next</button>
+        </form>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <a href="#">Questions? Contact us</a>
+        <table class="footer">
+            <tr>
+                <td>
+                    <a href="#">FAQ</a>
+                    <a href="#">Cookie Preferences</a>
+                </td>
+                <td>
+                    <a href="#">Help Center</a>
+                    <a href="#">Corporate Information</a>
+                </td>
+                <td>
+                    <a href="#">Terms of Use</a>
+                </td>
+                <td>
+                    <a href="#">Privacy</a>
+                </td>
+            </tr>
+        </table>
+    </footer>
+
+    <script src="../netflix.js"></script>
+</body>
+
+</html>
