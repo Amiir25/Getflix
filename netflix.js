@@ -200,7 +200,7 @@ faqQuestions.forEach((question) => {
 
 /*-------------- Sign In Button --------------*/
 function openSignInPage() {
-    window.location.href = 'signin.htm';
+    window.location.href = 'signin.html';
 }
 
 /*-------------- Get Started Button --------------*/
@@ -215,7 +215,7 @@ getStartedBtns.forEach((button) => {
         if (getStartedEmail.value.trim() === "") {
             getStartedEmail.focus();
         } else {
-            window.location.href = 'registration.htm';
+            window.location.href = 'registration.html';
         }
 
         // Save the email entered
@@ -228,10 +228,10 @@ getStartedBtns.forEach((button) => {
 
 /*-------------- Registrations --------------*/
 function openRegistration() {
-    window.location.href = 'registration.htm';
+    window.location.href = 'registration.html';
 }
 function openRegistrationForm() {
-    window.location.href = 'registration-form.htm';
+    window.location.href = 'registration-form.html';
 }
 
 // Put the email in the registration-form page
@@ -269,5 +269,5 @@ btnNext2.addEventListener('click', () => {
 
 // Go back to home page
 function backHome() {
-    window.location.href = 'home.htm';
+    window.location.href = 'index.html';
 }
