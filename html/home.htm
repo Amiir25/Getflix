@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../img/tab-logo.png" type="image/x-icon" />
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/6342bc0aa2.js" crossorigin="anonymous"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../styles/home.css">
+    <link rel="stylesheet" href="../styles/movies.css">
+    <title>Netflix Ethiopia - Watch TV Shows Online, Watch Movies Online</title>
+</head>
+
+<body>
+    <header>
+        <!-- Navbar -->
+        <nav>
+            <div class="logo">
+                <a href="home.htm"><img src="../img/logo.png" alt=""></a>
+            </div>
+            <div class="sign-in">
+                <button onclick="openSignInPage()">Sign In</button>
+            </div>
+        </nav>
+
+        <!-- Top Content -->
+        <div class="top-content">
+            <div class="heading">
+                <h1>Unlimited movies,<br>TV Shows, and more</h1>
+                <p>Starts at USD 2.99. Cancel any time.</p>
+            </div>
+            <div class="get-started-area">
+                <p>Ready to watch? Enter your email to create or restart your membership</p>
+                <div class="get-started">
+                    <div class="get-started-email">
+                        <input type="email" id="email" placeholder=" ">
+                        <label for="email">Email Address</label>
+                    </div>
+                    <button class="get-started-btn">
+                        Get Started
+                        <i class="fa-solid fa-greater-than"></i>
+                    </button>
+                </div>
+            </div>
+    </header>
+
+    <div class="border-color"></div>
+    <div class="container">
+        <!-- Trending Now -->
+        <div class="trending">
+            <h1 class="title">Trending Now</h1>
+            <div class="movie-wrapper">
+                <button class="scroll-btn left">&lt</button>
+                <div class="scroll-shadow left"></div>
+                <div class="movies">
+                    <button class="movie-item" data-film-type="FILM" data-movie-title="CARRY-ON"
+                        data-release-date="2024" data-age-rating="18+" data-movie-type="Movie" data-genre1="Action"
+                        data-genre2="Thriller"
+                        data-logline="An airport security officer races to outsmart a mysterious traveler forcing him to let a dangerous item slip onto a Christmas Eve flight."
+                        data-background="../img/movie-details/carry-on-bg.png">
+                        <img src="../img/carry-on.png" alt="">
+                    </button>
+                    <button class="movie-item" data-film-type="FILM" data-movie-title="FERRY 2" data-release-date="2024"
+                        data-age-rating="16+" data-movie-type="Movie" data-genre1="Drama" data-genre2="Thriller"
+                        data-logline="After losing his drug empire, Ferry Bouman has found a measure of peace away from Brabant's criminal underworld — until his past catches up to him."
+                        data-background="../img/movie-details/ferry2-bg.jpg">
+                        <img src="../img/ferry2.png" alt="">
+                    </button>
+                    <button class="movie-item" data-film-type="SERIES" data-movie-title="THE DRAGON PRINCE"
+                        data-release-date="2024" data-age-rating="18+" data-movie-type="7 Seasons" data-genre1="Fantasy"
+                        data-logline="An extraordinary discovery inspires two human princes and an elven assassin to team up on an epic quest to bring peace to their warring lands."
+                        data-background="../img/movie-details/the-dragon-prince-bg.jpg">
+                        <img src="../img/the-dragon-prince.png" alt="">
+                    </button>
+                    <button class="movie-item" data-film-type="SERIES" data-movie-title="SQUID GAME"
+                        data-release-date="2021" data-age-rating="18+" data-movie-type="2 Seasons"
+                        data-genre1="Survival" data-genre2="Thriller" data-genre3="Horror"
+                        data-logline="Hundreds of cash-strapped players accept a strange invitation to compete in children's games. Inside, a tempting prize awaits — with deadly high stakes."
+                        data-background="../img/movie-details/squid-game-bg.png">
+                        <img src="../img/squid-game.jpg" alt="">
+                    </button>
+                    <button class="movie-item" data-film-type="FILM" data-movie-title="BAD BOYS: RIDE OR DIE"
+                        data-release-date="2024" data-age-rating="18+" data-movie-type="Movie" data-genre1="Action"
+                        data-genre2="Comedy"
+                        data-logline="When a mysterious enemy frames their late captain for corruption, Miami cops Mike and Marcus go rogue to expose a conspiracy — and clear their own names."
+                        data-background="../img/movie-details/bad-boys-ride-or-die.png">
+                        <img src="../img/bad-boys-ride-or-die.png" alt="">
+                    </button>
+                    <button class="movie-item" data-film-type="FILM" data-movie-title="THE SIX TRIPLE EIGHT"
+                        data-release-date="2024" data-age-rating="13+" data-movie-type="Movie" data-genre1="War"
+                        data-genre2="Drama"
+                        data-logline="During WWII, the only US Women's Army Corps unit of color stationed overseas takes on an impossible mission in Tyler Perry's drama based on a true story."
+                        data-background="../img/movie-details/the-six-triple-eight-bg.png">
+                        <img src="../img/the-six-triple-eight.png" alt="">
+                    </button>
+                    
+                    <button class="movie-item" data-film-type="FILM" data-movie-title="THE PIANO LESSON"
+                        data-release-date="2024" data-age-rating="13+" data-movie-type="Movie" data-genre1="Drama"
+                        data-genre2="Music"
+                        data-logline="A brewing battle over the fate of an heirloom piano threatens to tear a family apart in this drama based on August Wilson's Pulitzer Prize-winning play."
+                        data-background="../img/movie-details/piano-lesson-bg.jpg">
+                        <img src="../img/piano-lesson.png" alt="">
+                    </button>
+                    <button class="movie-item" data-film-type="FILM" data-movie-title="SPY" data-release-date="2015"
+                        data-age-rating="18+" data-movie-type="Movie" data-genre1="Action" data-genre2="Comedy"
+                        data-logline="To avenge her superspy partner and stop a global threat, an untested, desk-bound CIA analyst goes undercover — and proves remarkably adept in the field."
+                        data-background="../img/movie-details/spy-bg.png">
+                        <img src="../img/spy.png" alt="">
+                    </button>
+                    <button class="movie-item" data-film-type="FILM" data-movie-title="DON'T MOVE"
+                        data-release-date="2024" data-age-rating="18+" data-movie-type="Movie" data-genre1="Horror"
+                        data-genre2="Thriller"
+                        data-logline="A grieving woman in a secluded forest encounters a killer who injects her with a paralytic drug. As her body shuts down, her fight for survival begins."
+                        data-background="../img/movie-details/dont-move-bg.png">
+                        <img src="../img/dont-move.png" alt="">
+                    </button>
+                    <button class="movie-item" data-film-type="SERIES" data-movie-title="PRISON BREAK"
+                        data-release-date="2017" data-age-rating="16+" data-movie-type="5 Seasons" data-genre1="Action"
+                        data-logline="When his brother is wrongly convicted of murder, a structural engineer resolves to bust his sibling out of the notorious Fox River State Penitentiary."
+                        data-background="../img/movie-details/prison-break-bg.png">
+                        <img src="../img/prison-break.png" alt="">
+                    </button>
+                </div> <!-- movies -->
+                <div class="scroll-shadow right"></div>
+                <button class="scroll-btn right">&gt</button>
+            </div> <!-- movie-wrapper -->
+        </div> <!-- trending -->
+
+        <!-- Only on Netflix -->
+        <div class="on-netflix">
+            <h1 class="title">Only on Netflix</h1>
+            <div class="movie-wrapper">
+                <button class="scroll-btn left">&lt</button>
+                <div class="scroll-shadow left"></div>
+                <div class="movies">
+                    <button class="movie-item" data-film-type="SERIES" data-movie-title="MONEY HEIST"
+                        data-release-date="2017" data-age-rating="18+" data-movie-type="5 Seasons"
+                        data-genre1="Thriller"
+                        data-logline="Eight thieves take hostages and lock themselves in the Royal Mint of Spain as a criminal mastermind manipulates the police to carry out his plan."
+                        data-background="../img/movie-details/money-heist-part-4-preview-netflix.png">
+                        <img src="../img/money-heist.png" alt="">
+                    </button>
+                    <button class="movie-item" data-film-type="FILM" data-movie-title="THE KITCHEN"
+                        data-release-date="2024" data-age-rating="18+" data-movie-type="Movie" data-genre1="Drama"
+                        data-logline="Izi's close to escaping The Kitchen, one of London’s last remaining housing estates. But when young Benji enters his life, he faces some hard decisions."
+                        data-background="../img/movie-details/the-kitchen-bg.png">
+                        <img src="../img/the-kitchen.png" alt="">
+                    </button>
+                    <button class="movie-item" data-film-type="" data-movie-title="CODE 8 PART ||"
+                        data-release-date="2024" data-age-rating="16+" data-movie-type="Movie" data-genre1="Sci-Fi"
+                        data-logline="In a city where people with powers are policed and oppressed, an ex-criminal must turn to a drug lord he despises to protect a teen from a corrupt cop."
+                        data-background="../img/movie-details/code-8-part-2-bg.png">
+                        <img src="../img/code-8-part-2.png" alt="">
+                    </button>
+                    <button class="movie-item" data-film-type="FILM" data-movie-title="RIDE ALONG 2"
+                        data-release-date="2016" data-age-rating="13+" data-movie-type="Movie" data-genre1="Comedy"
+                        data-genre2="Action"
+                        data-logline="Before Ben can marry James' sister, these two Atlanta cops must head to Miami to help the local police bring down a brutal drug dealer."
+                        data-background="../img/movie-details/ride-along-2-bg.png">
+                        <img src="../img/ride-along-2.png" alt="">
+                    </button>
+                    <button class="movie-item" data-film-type="FILM" data-movie-title="ALL QUITE ON THE WESTERN FRONT"
+                        data-release-date="2022" data-age-rating="18+" data-movie-type="Movie" data-genre1="War"
+                        data-genre2="Action"
+                        data-logline="When 17-year-old Paul joins the Western Front in World War I, his initial excitement is soon shattered by the grim reality of life in the trenches."
+                        data-background="../img/movie-details/all-quiet-on-the-western-front-bg.png">
+                        <img src="../img/all-quiet-on-the-western-front.png" alt="">
+                    </button>
+                    <button class="movie-item" data-film-type="SERIES" data-movie-title="LUCIFER"
+                        data-release-date="2021" data-age-rating="18+" data-movie-type="6 Seasons" data-genre1="Drama"
+                        data-logline="Bored with being the Lord of Hell, the devil relocates to Los Angeles, where he opens a nightclub and forms a connection with a homicide detective."
+                        data-background="../img/movie-details/lucifer-bg.png">
+                        <img src="../img/lucifer.png" alt="">
+                    </button>
+
+                    <button class="movie-item" data-film-type="FILM" data-movie-title="REBEL RIDGE"
+                        data-release-date="2024" data-age-rating="16+" data-movie-type="Movie" data-genre1="Action"
+                        data-genre2="Thriller"
+                        data-logline="A former Marine confronts corruption in a small town when local law enforcement unjustly seizes the bag of cash he needs to post his cousin's bail."
+                        data-background="../img/movie-details/rebel-ridge-bg.png">
+                        <img src="../img/rebel-ridge.png" alt="">
+                    </button>
+                    <button class="movie-item" data-film-type="TV SERIES" data-movie-title="ARCANE"
+                        data-release-date="2024" data-age-rating="18+" data-movie-type="2 Seasons" data-genre1="Action"
+                        data-logline="Amid the stark discord of twin cities Piltover and Zaun, two sisters fight on rival sides of a war between magic technologies and clashing convictions."
+                        data-background="../img/movie-details/arcane-bg.png">
+                        <img src="../img/arcane.png" alt="">
+                    </button>
+                    <button class="movie-item" data-film-type="FILM" data-movie-title="OUTSIDE" data-release-date="2024"
+                        data-age-rating="18+" data-movie-type="Movie" data-genre1="Horror"
+                        data-logline="A family retreats to an isolated farm during a zombie outbreak, but years of painful secrets take a toll as they navigate their desolate world."
+                        data-background="../img/movie-details/outside-bg.png">
+                        <img src="../img/out-side.png" alt="">
+                    </button>
+                    <button class="movie-item" data-film-type="SERIES" data-movie-title="THE MADNESS"
+                        data-release-date="2024" data-age-rating="18+" data-movie-type="Limited Series"
+                        data-genre1="Thriller" data-logline="After a media pundit stumbles upon a dead body deep in the Poconos woods, he finds himself framed
+                        for the murder of a notorious white supremacist."
+                        data-background="../img/movie-details/the-madness-bg.png">
+                        <img src="../img/the-madness.png" alt="">
+                    </button>
+                </div> <!-- movies -->
+                <div class="scroll-shadow right"></div>
+                <button class="scroll-btn right">&gt</button>
+            </div> <!-- movie-wrapper -->
+        </div> <!-- on-netflix -->
+
+        <!-- Movie Details -->
+        <div class="overlay"></div>
+        <div class="movie-details-wrapper">
+            <div class="movie-details">
+                <div class="details-head">
+                    <div class="details-head-bg">
+                        <button class="close-details">
+                            <i class="fa-solid fa-x"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="details-body">
+                    <div class="logo">
+                        <img src="../img/tab-logo.png" alt="">
+                        <p id="film-type"></p>
+                    </div>
+                    <h1 id="movie-title"></h1>
+                    <div class="key-details">
+                        <h5 id="release-date"></h5>
+                        <h5 id="age-rating"></h5>
+                        <h5 id="movie-type"></h5>
+                        <h5 id="genre1"></h5>
+                        <h5 id="genre2"></h5>
+                        <h5 id="genre3"></h5>
+                    </div>
+                    <p id="logline"></p>
+                    <button class="get-started-btn" onclick="openRegistration()">
+                        Get Started
+                    </button>
+                    <p>Create or restart your membership</p>
+                </div>
+            </div>
+        </div> <!-- movie-details-wrapper -->
+
+        <!-- More Reasons to Join -->
+        <table class="more-reasons">
+            <h1 class="title">More Reasons to Join</h1>
+            <tr class="reasons">
+                <td class="taste">
+                    <p>Stories tailored to your taste</p>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-hand-holding"></i>
+                </td>
+                <td class="switch">
+                    <p>Cancel or switch plans anytime</p>
+                    <i class="fa-solid fa-handshake-simple"></i>
+                </td>
+                <td class="for-kids">
+                    <p>A place just for kids</p>
+                    <i class="fa-solid fa-heart"></i>
+                </td>
+                <td class="tv">
+                    <p>For your phone, tablet, laptop and TV</p>
+                    <i class="fa-solid fa-tv"></i>
+                    <i class="fa-solid fa-mobile"></i>
+                </td>
+            </tr>
+        </table>
+
+        <!-- Frequently Asked Questions -->
+        <div class="faq-section">
+            <h1 class="title">Frequently Asked Questions</h1>
+            <div class="faq-item">
+                <button class="faq-question">
+                    What is Netflix?
+                    <i class="fa-solid fa-plus"></i>
+                </button>
+                <div class="faq-answer">
+                    Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime,
+                    documentaries, and more on thousands of internet-connected devices.<br><br>
+                    You can watch as much as you want, whenever you want without a single commercial – all for one low
+                    monthly price. There's always something new to discover and new TV shows and movies are added every
+                    week!
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">
+                    How much does Netflix cost?
+                    <i class="fa-solid fa-plus"></i>
+                </button>
+                <div class="faq-answer">
+                    Watch Netflix on your smartphone, tablet, Smart TV, laptop, or streaming device, all for one fixed
+                    monthly fee. Plans range from USD 2.99 to USD 9.99 a month. No extra costs, no contracts.
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">
+                    Where can I watch?
+                    <i class="fa-solid fa-plus"></i>
+                </button>
+                <div class="faq-answer">
+                    Watch anywhere, anytime. Sign in with your Netflix account to watch instantly on the web at
+                    netflix.com from your personal computer or on any internet-connected device that offers the Netflix
+                    app, including smart TVs, smartphones, tablets, streaming media players and game consoles.<br><br>
+
+                    You can also download your favorite shows with the iOS or Android app. Use downloads to watch while
+                    you're on the go and without an internet connection. Take Netflix with you anywhere.
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">
+                    How do I cancel?
+                    <i class="fa-solid fa-plus"></i>
+                </button>
+                <div class="faq-answer">
+                    Netflix is flexible. There are no pesky contracts and no commitments. You can easily cancel your
+                    account online in two clicks. There are no cancellation fees – start or stop your account anytime.
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">
+                    What can I watch on Netflix?
+                    <i class="fa-solid fa-plus"></i>
+                </button>
+                <div class="faq-answer">
+                    Netflix has an extensive library of feature films, documentaries, TV shows, anime, award-winning
+                    Netflix originals, and more. Watch as much as you want, anytime you want.
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">
+                    Is Netflix good for kids?
+                    <i class="fa-solid fa-plus"></i>
+                </button>
+                <div class="faq-answer">
+                    The Netflix Kids experience is included in your membership to give parents control while kids enjoy
+                    family-friendly TV shows and movies in their own space.<br><br>
+
+                    Kids profiles come with PIN-protected parental controls that let you restrict the maturity rating of
+                    content kids can watch and block specific titles you don’t want kids to see.
+                </div>
+            </div>
+        </div> <!-- faq-section -->
+
+        <!-- Get Started -->
+        <div class="get-started-area">
+            <p>Ready to watch? Enter your email to create or restart your membership</p>
+            <div class="get-started">
+                <div class="get-started-email">
+                    <input type="email" id="email" placeholder=" ">
+                    <label for="email">Email Address</label>
+                </div>
+                <button class="get-started-btn">
+                    Get Started
+                    <i class="fa-solid fa-greater-than"></i>
+                </button>
+            </div>
+        </div>
+    </div> <!-- container -->
+
+    <!-- Footer -->
+    <footer>
+        <a href="#">Questions? Contact us</a>
+        <table class="footer">
+            <tr>
+                <td>
+                    <a href="#">FAQ</a>
+                    <a href="#">Investor Relation</a>
+                    <a href="#">Privacy</a>
+                    <a href="#">Speed Test</a>
+                </td>
+                <td>
+                    <a href="#">Help Center</a>
+                    <a href="#">Jobs</a>
+                    <a href="#">Cookie Preferences</a>
+                    <a href="#">Legal Notices</a>
+                </td>
+                <td>
+                    <a href="#">Account</a>
+                    <a href="#">Ways to Watch</a>
+                    <a href="#">Corporate Information</a>
+                    <a href="#">Only on Netflix</a>
+                </td>
+                <td>
+                    <a href="#">Media Center</a>
+                    <a href="#">Terms of Use</a>
+                    <a href="#">Contact Us</a>
+                </td>
+            </tr>
+        </table>
+        <div class="language">
+            <img src="../img/translate.png" alt="">
+            <select>
+                <option value="">English</option>
+            </select>
+        </div>
+        <p>Netflix Ethiopia</p>
+    </footer>
+
+
+    <script src="../netflix.js"></script>
+</body>
+
+</html>
