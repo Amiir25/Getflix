@@ -1,0 +1,314 @@
+/*
+    Amir Sadik
+    Styles for Netflix Clone home page
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+:root {
+    --btn-color: #ea151c;
+    --btn-hover: #d3050c;
+    --text-color: #fff;
+    --bg-primary: #000;
+    --bg-secondary: #272727;
+    --border-color: #6e6e6e;
+    --main-gradient: #c024f4;
+    --title-color: #f1b4b4;
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(
+        rgba(0, 0, 0, .4),
+        rgba(0, 0, 0, 0),
+        rgba(0, 0, 0, 0.8)),
+        url(../img/background-primary.jpg) no-repeat center center / cover;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 120px;
+}
+
+nav div {
+    margin-top: 20px;
+}
+
+.logo img {
+    width: 150px;
+}
+
+.sign-in button {
+    border: none;
+    width: 80px;
+    padding: 7px 0;
+    border-radius: 4px;
+    color: var(--text-color);
+    background: var(--btn-color);
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.sign-in button:hover {
+    filter: brightness(.9);
+}
+
+/*-------------------- Top Content --------------------*/
+.top-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 90%;
+    color: var(--text-color);
+}
+
+.heading {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.heading h1 {
+    font-size: 60px;
+    font-weight: 900;
+}
+
+.heading p {
+    font-size: 28px;
+    font-weight: 600;
+    margin-top: 25px;
+}
+
+.get-started-area {
+    text-align: center;
+    color: var(--text-color);
+}
+
+.get-started-area p {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.get-started {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.get-started-email {
+    position: relative;
+    text-align: center;
+}
+
+.get-started-email input{
+    background: rgba(0, 0, 0, 0.8);
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    width: 480px;
+    padding: 15px 8px;
+    font-size: 20px;
+    color: var(--text-color);
+}
+
+.get-started-email label {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    font-size: 16px;
+    transition: all .3s;
+    pointer-events: none;
+}
+
+.get-started-email input:focus + label,
+.get-started-email input:not(:placeholder-shown) + label {
+    top: 10px;
+    font-size: 12px;
+}
+
+.get-started-btn {
+    background: var(--btn-color);
+    color: var(--text-color);
+    border: none;
+    border-radius: 10px;
+    padding: 15px 10px;
+    font-size: 20px;
+    font-weight: 600;
+    width: 200px;
+}
+
+.get-started-btn i {
+    padding-left: 10px;
+}
+
+.get-started-btn:hover {
+    filter: brightness(.9);
+}
+
+/*-------------------- More Reasons to Join --------------------*/
+.more-reasons {
+    margin-bottom: 50px;
+}
+
+.reasons {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px 0;
+}
+
+.reasons td {
+    position: relative;
+    background: var(--bg-secondary);
+    color: var(--text-color);
+    padding: 20px;
+    width: 250px;
+    height: 130px;
+    border: 1px solid var(--border-color);
+    border-radius: 20px;
+}
+
+.reasons td p {
+    font-size: 15px;
+}
+
+.reasons td i {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    font-size: 26px;
+    background: linear-gradient(
+        45deg,
+        var(--main-gradient),
+        var(--main-gradient),var(--btn-color),
+        #f37569, #f37569);
+    -webkit-background-clip: text;
+    /* Clips the background to the text */
+    -webkit-text-fill-color: transparent;
+    /* Makes the text itself transparent */
+}
+
+/*-- icons */
+.taste .fa-star {
+    font-size: 10px;
+    margin-bottom: 18px;
+    margin-right: 8px;
+    text-shadow: 0 0 6px #f37569;
+}
+
+.tv .fa-tv {
+    margin-right: 8px;
+}
+
+.tv .fa-mobile {
+    font-size: 15px;
+}
+
+/*-------------------- Frequently Asked Questions --------------------*/
+.faq-section *:not(.title) {
+    color: var(--text-color);
+}
+
+.faq-question,
+.faq-answer {
+    width: 100%;
+    text-align: left;
+    background: var(--bg-secondary);
+    font-size: 18px;
+    padding: 20px;
+    margin-bottom: 5px;
+    border: none;
+    border-radius: 20px;
+}
+
+.faq-question {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: all 0.3s;
+}
+
+.faq-question:hover {
+    background: #3f3f3f;
+}
+
+.faq-question i {
+    font-weight: lighter;
+    font-size: 25px;
+}
+
+.faq-answer {
+    opacity: 0;
+    display: none;
+    max-height: 0;
+    transition: all 0.3s;
+}
+
+.faq-answer.active {
+    opacity: 1;
+    max-height: 200px;
+    display: block;
+}
+
+.container .get-started-area {
+    margin-top: 100px;
+}
+
+/*-------------------- Footer --------------------*/
+footer {
+    padding: 50px 150px;
+    background: var(--bg-primary);
+}
+
+footer * {
+    font-size: 15px;
+    color: #9f9f9f;
+}
+
+.footer {
+    margin-top: 50px;
+    width: 100%;
+}
+
+.footer tr {
+    display: flex;
+    gap: 150px;
+}
+
+.footer tr td {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.language {
+    display: flex;
+    gap: 5px;
+    border: 1px solid #9f9f9f;
+    border-radius: 20px;
+    max-width: 150px;
+    margin: 40px 0;
+    padding: 10px 25px;
+
+}
+
+.language select {
+    background: transparent;
+    border: none;
+    outline: none;
+}
+
+.language img {
+    width: 20px;
+}
