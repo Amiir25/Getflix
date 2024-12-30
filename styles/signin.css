@@ -1,0 +1,176 @@
+/*
+    Amir Sadik
+    Styles for Netflix Clone Sign In page
+*/
+
+:root {
+    --btn-color: #ea151c;
+    --btn-hover: #d3050c;
+    --text-color: #fff;
+    --bg-primary: #000;
+    --bg-secondary: #101011;
+    --border-color: #a7a5a5;
+    --main-gradient: #c024f4;
+    --title-color: #f1b4b4;
+}
+
+header {
+    position: relative;
+}
+
+.sign-in {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 35%;
+    height: 100%;
+    padding: 50px 70px;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.sign-in * {
+    color: var(--text-color);
+}
+
+
+.sign-in-form {
+    text-align: center;
+}
+
+.email,
+.password {
+    position: relative;
+}
+
+.email input,
+.password input {
+    background: rgba(0, 0, 0, 0.6);
+    color: var(--text-color);
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    width: 100%;
+    font-size: 20px;
+    padding: 15px 8px;
+    margin-bottom: 10px;
+}
+
+.email label,
+.password label {
+    position: absolute;
+    top: 40%;
+    left: 20px;
+    transform: translateY(-50%);
+    color: var(--text-color);
+    pointer-events: none;
+    transition: all .3s;
+}
+
+.email input:focus + label,
+.email input:not(:placeholder-shown) + label,
+.password input:focus + label,
+.password input:not(:placeholder-shown) + label {
+    top: 10px;
+    font-size: 12px;
+}
+
+button.sign-in-btn,
+button.sign-in-code {
+    width: 100%;
+    padding: 10px 0;
+}
+
+/*-- Form Validation --*/
+.empty-form {
+    border: 1px solid red;
+}
+
+button.sign-in-code {
+    background: rgba(131, 130, 130, 0.8);
+}
+
+button.sign-in-btn:hover {
+    background: var(--btn-hover);
+}
+
+button.sign-in-code:hover {
+    background: rgba(92, 91, 91, 0.8);
+}
+
+.sign-in-form h4 {
+    margin: 15px 0;
+    color: var(--border-color);
+}
+
+.forgot-password {
+    margin: 15px 0;
+}
+
+.forgot-password a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+input[type="checkbox"] {
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    border: 1px solid var(--border-color);
+    border-radius: 2px;
+    transition: all .3s;
+}
+
+input[type="checkbox"]:hover {
+    border: 1px solid var(--text-color); /* Light blue background on hover */
+  }
+
+  /* Style the checkbox when checked */
+  input[type="checkbox"]:checked {
+    background-color: var(--text-color);
+    border-color: var(--text-color);
+    position: relative;
+  }
+
+ /* Add a checkmark */
+ input[type="checkbox"]:checked::after {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 5px;
+    transform: translateX(-50%);
+    width: 3px;
+    height: 6px;
+    border: solid #000;
+    border-width: 0 1px 1px 0;
+    transform: rotate(45deg);
+  }
+
+.sign-in p {
+    margin: 15px 0;
+    color: var(--border-color);
+}
+
+.sign-in p a {
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.footnote {
+    font-size: 12px;
+    color: var(--border-color);
+}
+
+.footnote a {
+    text-decoration: none;
+    color: blue;
+}
+
+.footnote a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background: #000;
+    padding-top: 220px;
+}
