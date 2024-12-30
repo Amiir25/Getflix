@@ -1,0 +1,258 @@
+/*
+    Amir Sadik
+    Styles for the movies
+*/
+
+:root {
+    --btn-color: #ea151c;
+    --btn-hover: #d3050c;
+    --text-color: #fff;
+    --bg-primary: #000;
+    --bg-secondary: #272727;
+    --border-color: #6e6e6e;
+    --main-gradient: #c024f4;
+    --title-color: #f1b4b4;
+}
+
+/*-------------------- Movies Section --------------------*/
+.container {
+    position: relative;
+    width: 100%;
+    padding: 50px 150px;
+    background: var(--bg-primary);
+}
+
+.border-color {
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(90deg,
+            var(--main-gradient),
+            var(--btn-color),
+            var(--main-gradient));
+}
+
+.title {
+    color: var(--title-color);
+    margin-bottom: 20px;
+}
+
+.movie-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: 70px;
+}
+
+
+.scroll-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: var(--border-color);
+    color: var(--text-color);
+    border: none;
+    border-radius: 50px;
+    width: 25px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 10px var(--bg-primary);
+    font-size: 25px;
+}
+
+.scroll-btn.left {
+    left: -50px;
+}
+
+.scroll-btn.right {
+    right: -50px;
+}
+
+.scroll-btn:hover {
+    background-color: var(--bg-secondary);
+}
+
+.scroll-shadow {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 20px;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.scroll-shadow.left {
+    left: 0;
+    width: 80px;
+    background: linear-gradient(to right,
+            var(--bg-primary),
+            rgba(0, 0, 0, 0.9),
+            rgba(0, 0, 0, 0.2),
+            transparent);
+}
+
+.scroll-shadow.right {
+    right: 0;
+    width: 80px;
+    background: linear-gradient(to left,
+            var(--bg-primary),
+            rgba(0, 0, 0, 0.9),
+            rgba(0, 0, 0, 0.2),
+            transparent);
+}
+
+.movies {
+    display: flex;
+    gap: 15px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    box-shadow: (-5px 0 50px var(--bg-primary), );
+}
+
+/*-- Remove the horizontal scroll bar --*/
+.movies::-webkit-scrollbar {
+    display: none;
+}
+
+.movies button {
+    border: none;
+    border-radius: 17px;
+}
+
+.movies img {
+    display: block;
+    width: 180px;
+    height: 260px;
+    border-radius: 15px;
+    transition: transform .3s;
+}
+
+.movies img:hover {
+    transform: scale(1.1, 1.1);
+}
+
+/*-------------------- Movie Details --------------------*/
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+}
+
+.movie-details-wrapper {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    height: 90vh;
+    background: #161616;
+    border: 2px solid var(--border-color);
+    border-radius: 20px;
+    z-index: 2;
+}
+
+/* .movie-details-wrapper.show {
+    opacity: 1;
+    transform: scale(1);
+    visibility: visible;
+} */
+
+.movie-details {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    color: var(--text-color);
+}
+
+.details-head {
+    height: 55vh;
+    border-radius: 20px;
+    /*-- Default background --*/
+    background: linear-gradient(
+            rgba(22, 22, 22, 0),
+            rgba(22, 22, 22, 0),
+            rgba(22, 22, 22, 0),
+            rgba(22, 22, 22, .9) 90%),
+        url(../img/movie-details/background-primary.jpg) no-repeat center center / cover;
+}
+
+.details-head-bg {
+    height: 100%;
+    display: flex;
+    justify-content: end;
+    background: linear-gradient(45deg,
+            #161616,
+            #161616,
+            rgba(22, 22, 22, .2),
+            rgba(22, 22, 22, .1) 45%);
+}
+
+.close-details {
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+    margin: 20px;
+    color: var(--text-color);
+    background: none;
+    border: none;
+    border-radius: 50%;
+    outline: none;
+    transition: all .3s;
+}
+
+.close-details:hover {
+    background: rgba(155, 155, 155, .5);
+}
+
+.details-body {
+    position: absolute;
+    top: 35%;
+    left: 0;
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    padding-left: 20px;
+}
+
+.details-body .logo {
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+}
+
+.details-body .logo img {
+    width: 20px;
+    margin: 0 6px;
+}
+
+#movie-title {
+    font-size: 50px;
+    line-height: 1;
+}
+
+.key-details {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.key-details h5 {
+    font-weight: 400;
+}
+
+.key-details span {
+    font-weight: 900;
+}
+
+.details-body #logline {
+    margin: 15px 0;
+}
