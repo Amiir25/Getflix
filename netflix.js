@@ -1,8 +1,3 @@
-/*-------------- Lazy image loading --------------*/
-document.querySelector('img').forEach(img => {
-    img.setAttribute('loading', 'lazy');
-});
-
 /*-------------- Scroll Buttons & Shadows --------------*/
 const movies = document.querySelectorAll('.movies');
 const leftButtons = document.querySelectorAll('.scroll-btn.left');
@@ -162,6 +157,13 @@ function showMovieDetails() {
         overlay.style.opacity = '1';
     }, 10);
 }
+
+/*-------------- Lazy image loading --------------*/
+// const images = document.querySelector('img');
+
+// images.forEach(img => {
+//     img.setAttribute('loading', 'lazy');
+// });
 
 
 /*-------------- Frequently Asked Questions --------------*/
