@@ -180,7 +180,7 @@
             rgba(22, 22, 22, 0),
             rgba(22, 22, 22, 0),
             rgba(22, 22, 22, .9) 90%),
-        url(../img/movie-details/background-primary.jpg) no-repeat center center / cover;
+        url(../img/movie-details/background-primary.webp) no-repeat center center / cover;
 }
 
 .details-head-bg {

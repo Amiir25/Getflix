@@ -28,7 +28,7 @@ header {
         rgba(0, 0, 0, .4),
         rgba(0, 0, 0, 0),
         rgba(0, 0, 0, 0.8)),
-        url(../img/background-primary.jpg) no-repeat center center / cover;
+        url(../img/background-primary.webp) no-repeat center center / cover;
 }
 
 nav {
