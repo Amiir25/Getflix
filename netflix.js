@@ -200,7 +200,7 @@ faqQuestions.forEach((question) => {
 
 /*-------------- Sign In Button --------------*/
 function openSignInPage() {
-    window.location.href = '/html/signin.html';
+    window.location.href = 'html/signin.html';
 }
 
 /*-------------- Get Started Button --------------*/
