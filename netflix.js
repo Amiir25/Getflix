@@ -1,5 +1,5 @@
 /*-------------- Lazy image loading --------------*/
-document.querySelector('img').forEach(img => () {
+document.querySelector('img').forEach(img => {
     img.setAttribute('loading', 'lazy');
 });
 
