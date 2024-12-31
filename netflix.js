@@ -1,3 +1,8 @@
+/*-------------- Lazy image loading --------------*/
+document.querySelector('img').forEach(img => () {
+    img.setAttribute('loading', 'lazy');
+});
+
 /*-------------- Scroll Buttons & Shadows --------------*/
 const movies = document.querySelectorAll('.movies');
 const leftButtons = document.querySelectorAll('.scroll-btn.left');
