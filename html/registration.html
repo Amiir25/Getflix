@@ -26,50 +26,104 @@
         </div>
     </nav>
 
-    <!-- Registration -->
-    <div class="container">
-        <div class="icons-wrapper">
-            <i class="fa-solid fa-laptop"></i>
-            <i class="fa-solid fa-tv"></i>
-            <i class="fa-solid fa-tablet-screen-button"></i>
-            <i class="fa-solid fa-mobile-screen"></i>
-        </div>
-        <div class="registration">
-            <p class="line-1">Step <span>1</span> of <span>3</span></p>
-            <p class="line-2">Finish setting up your <br>account</p>
-            <p class="line-3">
-                Netflix is personalized for you.<br>
-                Create a password to watch on any<br>
-                device at any time.
-            </p>
-            <button class="next-step-1" onclick="openRegistrationForm()">Next</button>
-        </div>
-    </div>
+    <div class="container get-started-contents">
+        <div class="form-container">
+            <!-- Setting up account -->
+            <div class="wrapper account-setup-wrapper" id="content-1">
+                <div class="icons-wrapper">
+                    <i class="fa-solid fa-laptop"></i>
+                    <i class="fa-solid fa-tv"></i>
+                    <i class="fa-solid fa-tablet-screen-button"></i>
+                    <i class="fa-solid fa-mobile-screen"></i>
+                </div>
+                <div class="account-setup">
+                    <p class="line-1">Step <span>1</span> of <span>3</span></p>
+                    <p class="line-2">Finish setting up your <br>account</p>
+                    <p class="line-3">
+                        Netflix is personalized for you.<br>
+                        Create a password to watch on any<br>
+                        device at any time.
+                    </p>
+                    <button class="next-btn-1" data-index="1">Next</button>
+                </div>
+            </div> <!-- account-setup-wrapper -->
 
-    <!-- Footer -->
-    <footer>
-        <a href="#">Questions? Contact us</a>
-        <table class="footer">
-            <tr>
-                <td>
-                    <a href="#">FAQ</a>
-                    <a href="#">Cookie Preferences</a>
-                </td>
-                <td>
-                    <a href="#">Help Center</a>
-                    <a href="#">Corporate Information</a>
-                </td>
-                <td>
-                    <a href="#">Terms of Use</a>
-                </td>
-                <td>
-                    <a href="#">Privacy</a>
-                </td>
-            </tr>
-        </table>
-    </footer>
+            <!-- Registration Form -->
+            <div class="wrapper registration-wrapper" id="content-2">
+                <form class="registration">
+                    <p class="line-1">Step <span>2</span> of <span>3</span></p>
+                    <p class="line-2">Create a password to start<br> your membership
+                    <p class="line-3">
+                        Just a few more steps and you're done!<br>
+                        We hate paperwork, too.
+                    </p>
+                    <div class="email">
+                        <input type="email" id="registration-email" placeholder=" ">
+                        <label for="email">Email or mobile number</label>
+                    </div>
+                    <div class="password">
+                        <input type="password" id="registration-password" placeholder=" ">
+                        <label for="email">Password</label>
+                    </div>
+                    <label>
+                        <input type="checkbox" value="remeber-me">
+                        Please do not email me Netflix special offers
+                    </label>
+                    <button class="next-btn-2" data-index="2">Next</button>
+                </form>
+            </div> <!-- registration-wrapper -->
 
-    <script src="../netflix.js"></script>
+            <!-- Choose your plan -->
+            <div class="wrapper choose-plan-wrapper" id="content-3" style="display: none;">
+                <div class="check-icon">
+                    <i class="fa-solid fa-check"></i>
+                </div>
+                <p class="line-1">Step <span>3</span> of <span>3</span></p>
+                <div class="choose-plan-list">
+                    <p class="choose-plan-title">Choose your plan.</p>
+                    <div class="list list-1">
+                        <i class="fa-solid fa-check"></i>
+                        <span>No commitments, cancel<br>anytime.</span>
+                    </div>
+                    <div class="list list-2">
+                        <i class="fa-solid fa-check"></i>
+                        <span>Every thing on Getflix for one low<br>price.</span>
+                    </div>
+                    <div class="list list-3">
+                        <i class="fa-solid fa-check"></i>
+                        <span>No ads and no extra fees. Ever.</span>
+                    </div>
+                    <button class="next-btn-3" data-index="3">Next</button>
+                </div>
+            </div> <!-- choose-plan-wrapper -->
+        </div> <!-- form-container -->
+
+        <!-- Footer -->
+        <footer>
+            <a href="#">Questions? Contact us</a>
+            <table class="footer">
+                <tr>
+                    <td>
+                        <a href="#">FAQ</a>
+                        <a href="#">Cookie Preferences</a>
+                    </td>
+                    <td>
+                        <a href="#">Help Center</a>
+                        <a href="#">Corporate Information</a>
+                    </td>
+                    <td>
+                        <a href="#">Terms of Use</a>
+                    </td>
+                    <td>
+                        <a href="#">Privacy</a>
+                    </td>
+                </tr>
+            </table>
+        </footer>
+    </div> <!-- container -->
+
+    <script src="../javascript/home.js"></script>
+    <script src="../javascript/registration.js"></script>
 </body>
 
 </html>
