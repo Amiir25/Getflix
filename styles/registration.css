@@ -37,10 +37,6 @@ nav {
 }
 
 .wrapper {
-    border: 1px solid blue;
-}
-
-.wrapper {
     display: none;
     position: absolute;
     top: 20px;
@@ -179,10 +175,10 @@ nav {
     transition: all .3s;
 }
 
-.email input:focus + label,
-.email input:not(:placeholder-shown) + label,
-.password input:focus + label,
-.password input:not(:placeholder-shown) + label {
+.email input:focus+label,
+.email input:not(:placeholder-shown)+label,
+.password input:focus+label,
+.password input:not(:placeholder-shown)+label {
     top: 10px;
     font-size: 12px;
 }
@@ -193,7 +189,7 @@ nav {
 }
 
 /*-- Checkbox --*/
-.registration > label {
+.registration>label {
     display: flex;
     gap: 6px;
     align-items: center;
