@@ -1,70 +1,39 @@
 // JavaScript file for registration page
 
-const content1 = document.getElementById('content-1');
-const content2 = document.getElementById('content-2');
-const content3 = document.getElementById('content-3');
+document.addEventListener('DOMContentLoaded', function () {
+    const wrappers = document.querySelectorAll('.wrapper');
+    const nextButtons = document.querySelectorAll('[class^="next-btn-"]');
 
-const nextBtn1 = document.querySelector('.next-btn-1');
-const nextBtn2 = document.querySelector('.next-btn-2');
-const nextBtn3 = document.querySelector('.next-btn-3');
+    // Show only the first content initially
+    wrappers.forEach(wrapper => wrapper.style.display = 'none');
+    const firstWrapper = document.querySelector('#content-1');
+    firstWrapper.style.display = 'block';
+    firstWrapper.classList.add('active');
 
-// Initialize the first form as active
-// content1.classList.add('active');
-content1.style.display = 'block';
+    // Add click event for each "Next" button
+    nextButtons.forEach(button => {
+        button.addEventListener('click', function () {
+            const currentIndex = parseInt(button.getAttribute('data-index'));
+            const currentWrapper = document.querySelector(`#content-${currentIndex}`);
+            const nextWrapper = document.querySelector(`#content-${currentIndex + 1}`);
 
+            if (nextWrapper) {
+                // Animate current wrapper out to the left
+                currentWrapper.classList.remove('active');
+                currentWrapper.classList.add('exit');
 
-nextBtn1.addEventListener('click', () => {
-    content1.classList.add('exit');
-    content1.classList.remove('active');
+                // Wait for animation to complete before hiding
+                setTimeout(() => {
+                    currentWrapper.style.display = 'none';
+                    currentWrapper.classList.remove('exit');
+                }, 500); // Match the transition duration
 
-    content2.classList.remove('exit');
-    content2.style.display = 'block';
-
-    setTimeout(() => {
-        nextContent.style.left = '0';
-    }, 50);
+                // Animate next wrapper in from the right
+                nextWrapper.style.display = 'block';
+                setTimeout(() => {
+                    nextWrapper.classList.add('active');
+                }, 50); // Allow DOM to update before applying class
+            }
+        });
+    });
 });
-
-nextBtn2.addEventListener('click', () => {
-    content2.classList.add('exit');
-    content2.classList.remove('active');
-
-    content3.classList.add('active');
-    setTimeout(() => {
-        nextContent.style.left = '0';
-    }, 50);
-});
-
-
-
-
-// const nextBtn = document.querySelectorAll('.next-step');
-// let currentIndex = 1;
-// nextBtn.forEach((btn) => {
-//     btn.addEventListener('click', () => {
-//         // Access the clicked button using 'event.target'
-//         const currentBtn = event.target;
-
-//         // Get the data-link attribute value using 'dataset.link'
-//         const currentIndex = currentBtn.dataset.link;
-
-//         const currentContent = document.getElementById(`content-${currentIndex}`);
-//         const nextContent = document.getElementById(`content-${currentIndex + 1}`);
-
-//         // Exit the function if there is no next content
-//         if (!nextContent) {
-//             window.location.href = '../index.html';
-//             return;
-//         };
-
-//         currentContent.classList.add('exit');
-//         currentContent.classList.remove('active');
-
-//         nextContent.classList.remove('exit');
-//         setTimeout(() => {
-//             nextContent.style.left = '0';
-//         }, 50);
-
-//         // currentIndex++;
-//     });
-// });
