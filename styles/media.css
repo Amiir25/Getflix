@@ -1,0 +1,15 @@
+/*--------------- Media Queries --------------------*/
+
+@media screen and (max-width: 1450px) {
+    .more-reasons {
+        width: 100%;
+    }
+
+    .reasons {
+        flex-direction: column;
+    }
+
+    .reasons td {
+        width: 100%;
+    }
+}
