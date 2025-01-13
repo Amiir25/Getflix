@@ -12,16 +12,20 @@
     <!-- CSS -->
     <link rel="stylesheet" href="../styles/home.css">
     <link rel="stylesheet" href="../styles/registration.css">
-    <title>Netflix Ethiopia - Watch TV Shows Online, Watch Movies Online</title>
+    <link rel="stylesheet" href="../styles/media.css">
+    <title>Getflix Ethiopia - Watch TV Shows Online, Watch Movies Online</title>
 </head>
 
 <body>
     <!-- Navbar -->
     <nav>
         <div class="logo">
-            <a href="../index.html"><img src="../img/getflix-logo.webp" alt=""></a>
+            <a href="../index.html">
+                <img src="../img/getflix-logo.webp" alt="">
+                <img src="../img/g-logo.webp" id="g-logo" alt="">
+            </a>
         </div>
-        <div class="sign-in">
+        <div class="sign-in" id="sign-in-registration">
             <button onclick="openSignInPage()">Sign In</button>
         </div>
     </nav>
@@ -43,7 +47,7 @@
                     <p class="line-1">Step <span>1</span> of <span>3</span></p>
                     <p class="line-2">Finish setting up your <br>account</p>
                     <p class="line-3">
-                        Netflix is personalized for you.<br>
+                        Getflix is personalized for you.<br>
                         Create a password to watch on any<br>
                         device at any time.
                     </p>
@@ -72,7 +76,7 @@
                     </div>
                     <label>
                         <input type="checkbox" value="remeber-me">
-                        Please do not email me Netflix special offers
+                        Please do not email me Getflix special offers
                     </label>
                     <button class="next-btn-2" data-index="2">Next</button>
                 </form>
