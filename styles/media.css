@@ -1,6 +1,10 @@
 /*--------------- Media Queries --------------------*/
 
-@media screen and (max-width: 1450px) {
+@media screen and (max-width: 1350px) {
+    .container {
+        padding: 50px;
+    }
+
     .more-reasons {
         width: 100%;
     }
@@ -11,5 +15,181 @@
 
     .reasons td {
         width: 100%;
+    }
+
+    footer {
+        padding: 50px;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    nav {
+        padding: 0 10px;
+    }
+
+    .logo img {
+        width: 120px;
+    }
+
+    #sign-in-home button,
+    #sign-in-registration button {
+        width: 50px;
+        font-size: 12px;
+    }
+
+    .heading h1 {
+        font-size: 40px;
+    }
+
+    .heading p {
+        font-size: 20px;
+    }
+
+    .get-started-area p {
+        font-size: 15px;
+    }
+
+    .get-started {
+        flex-direction: column;
+    }
+
+    footer tr {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .logo img {
+        display: none;
+    }
+
+    #g-logo {
+        display: block;
+        width: 30px;
+    }
+
+    #sign-in-home button,
+    #sign-in-registration button {
+        width: 50px;
+    }
+
+    .heading h1 {
+        font-size: 30px;
+    }
+
+    .heading p {
+        font-size: 15px;
+        margin-top: 6px;
+    }
+
+    .get-started-email input {
+        width: 300px;
+        font-size: 15px;
+    }
+
+    .get-started-btn {
+        width: 120px;
+        font-size: 12px;
+    }
+
+    .title {
+        font-size: 30px;
+    }
+
+    .movies img {
+        width: 100px;
+        height: 180px;
+    }
+
+    .scroll-btn {
+        width: 20px;
+        height: 50px;
+        margin: 4px;
+    }
+
+    .movie-details-wrapper {
+        width: 300px;
+    }
+
+    .details-body .logo img {
+        width: 15px;
+    }
+
+    #movie-title {
+        font-size: 25px;
+    }
+
+    #sign-in-form {
+        width: 300px;
+        padding: 20px;
+    }
+
+    .email label,
+    .password label {
+        top: 40%;
+        left: 40px;
+    }
+
+    .email input,
+    .password input,
+    button.sign-in-btn,
+    button.sign-in-code {
+        width: 250px;
+        font-size: 15px;
+    }
+
+    /*-- Registration --*/
+    .wrapper button{
+        height: 50px;
+        font-size: 15px;
+    }
+
+    .fa-tv {
+        font-size: 50px;
+    }
+    
+    .fa-laptop,
+    .fa-tablet-screen-button {
+        font-size: 30px;
+    }
+    
+    .fa-mobile-screen {
+        font-size: 20px;
+    }
+
+    .account-setup,
+    .registration {
+        width: 200px;
+    }
+
+    .line-1 {
+        font-size: 10px;
+    }
+    
+    .line-1 span {
+        font-weight: 600;
+    }
+    
+    .line-2 {
+        font-size: 18px;
+        font-weight: 700;
+    }
+    
+    .line-3 {
+        margin: 20px 0;
+        font-size: 12px;
+    }
+
+    .registration>label {
+        font-size: 10px;
+    }
+
+    input[type="checkbox"] {
+        appearance: none;
+        width: 18px;
+        height: 18px;
+        border: 1px solid;
     }
 }
