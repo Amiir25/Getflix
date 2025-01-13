@@ -1,6 +1,6 @@
 /*--------------- Media Queries --------------------*/
 
-@media screen and (max-width: 1350px) {
+@media screen and (max-width: 1200px) {
     .container {
         padding: 50px;
     }
