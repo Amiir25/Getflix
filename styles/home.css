@@ -46,6 +46,10 @@ nav div {
     width: 200px;
 }
 
+#g-logo {
+    display: none;
+}
+
 .sign-in button {
     border: none;
     width: 80px;
@@ -117,6 +121,7 @@ nav div {
     padding: 15px 8px;
     font-size: 20px;
     color: var(--text-color);
+    outline: none;
 }
 
 .get-started-email label {
@@ -289,7 +294,6 @@ footer * {
 .footer tr td {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
     gap: 10px;
 }
 
