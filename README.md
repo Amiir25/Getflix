@@ -1,1 +1,2 @@
-# Netflix_Clone
+# Netflix Clone
+Clone of Netflix website.
