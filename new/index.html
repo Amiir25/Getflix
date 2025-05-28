@@ -16,12 +16,28 @@
 <body>
     <div class="container">
         <!-- Header -->
-        <div class="header">
-            <!-- Mavbar -->
-            <div class="nav flex items-center justify-between mx-3 my-2 border">
-                <img src="img/Netflix_Logo_PMS.png" alt="Netflix Logo" class="w-[120px] border">
-                <button id="signin-btn" class="bg-red-500 text-white px-2 py-1 rounded hover:bg-red-700">Sign In</button>
-            </div>
+        <div class="header bg-[url('./img/background.png')] bg-cover bg-center bg-no-repear text-white">
+            <div class="header-wrapper bg-[rgba(0,0,0,0.8)]">
+                <!-- Mavbar -->
+                <div class="nav flex items-center justify-between p-7">
+                    <img src="img/netflix-logo.webp" alt="Netflix Logo" class="w-[100px]">
+                    <button id="signin-btn" class="bg-red-500 text-white px-2 py-1 rounded hover:bg-red-700">Sign
+                        In</button>
+                </div>
+
+                <!-- Hero -->
+                <div class="hero h-[80vh] flex flex-col items-center text-center">
+                    <h1 class="text-4xl font-bold mt-20">Unlimited movies, TV<br>shows, and more</h1>
+                    <h5 class="m-3 font-semibold">Stats at USD 2.99. Cancel anytime.</h5>
+                    <p class="font-semibold mt-3 mb-1">Ready to watch? Enter your email to create or restart your
+                        membership.</p>
+                    <div class="hero-btns flex flex-col border w-full">
+                        <input type="email" placeholder="Email address"
+                            class="mx-auto w-100 p-3 bg-gray-600 rounded border">
+                        <button>Get Stated ></button>
+                    </div>
+                </div>
+            </div> <!-- header-wrapper -->
         </div> <!-- header -->
     </div>
 </body>
