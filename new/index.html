@@ -77,12 +77,16 @@
         <h2 class="text-white text-lg md:text-2xl font-medium mb-2">Trending Now</h2>
         <div id="movie-wrapper" class="border border-white relative w-full max-h-80 flex items-center">
             <!-- Left and right buttons -->
-            <button class="absolute text-white left-1 bg-gray-800 px-2 py-8 rounded">
-                <i class="fa-solid fa-chevron-left mx-2"></i>
-            </button>
-            <button class="absolute right-1 text-white bg-gray-800 px-2 py-8 rounded">
+            <div class="absolute left-0 bg-black p-8">
+                <button class=" text-white bg-gray-900 px-0.2 py-8 rounded">
+                    <i class="fa-solid fa-chevron-left mx-2"></i>
+                </button>
+            </div>
+            <div class="absolute right-0 bg-black p-8">
+                <button class="text-white bg-gray-900 px-0.2 py-8 rounded">
                 <i class="fa-solid fa-chevron-right mx-2"></i>
             </button>
+            </div>
             <!-- Movies -->
             <div id="movies" class="flex items-center gap-8 overflow-hidden">
                 <img src="./img/background.png" alt="" class="w-62 h-80">
