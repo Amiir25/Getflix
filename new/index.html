@@ -55,7 +55,8 @@
         </div> <!-- header-wrapper -->
     </div> <!-- header -->
 
-    <div class="w-full h-1 mb-80">
+    <!-- The line -->
+    <div class="w-full h-1">
         <svg viewBox="0 0 1000 1" preserveAspectRatio="none" class="w-full h-full">
             <path d="M0,1 C200,0 800,0 1000,1" stroke="url(#gradient)" fill="none" stroke-width="1" />
             <defs>
@@ -68,6 +69,26 @@
                 </linearGradient>
             </defs>
         </svg>
+    </div>
+
+    <!-- Trending Now -->
+    <div id="trending-now" class="mb-80 border border-red-500 mt-20 mx-6 md:mx-20 lg:mx-32">
+        <!-- Title -->
+        <h2 class="text-white text-lg md:text-2xl font-medium mb-2">Trending Now</h2>
+        <div id="movie-wrapper" class="border border-white relative w-full max-h-80 flex items-center">
+            <!-- Left and right buttons -->
+            <button class="absolute text-white left-1 bg-gray-800 px-2 py-8 rounded">
+                <i class="fa-solid fa-chevron-left mx-2"></i>
+            </button>
+            <button class="absolute right-1 text-white bg-gray-800 px-2 py-8 rounded">
+                <i class="fa-solid fa-chevron-right mx-2"></i>
+            </button>
+            <!-- Movies -->
+            <div id="movies" class="flex items-center gap-8 overflow-hidden">
+                <img src="./img/background.png" alt="" class="w-62 h-80">
+                <img src="./img/background.png" alt="" class="w-62 h-80">
+            </div>
+        </div>
     </div>
 
 
