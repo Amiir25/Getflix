@@ -77,46 +77,30 @@
         <h2 class="text-white text-lg md:text-2xl font-medium mb-2">Trending Now</h2>
         <div id="movie-wrapper" class="border border-whie relative w-full h-48 flex items-center">
             <!-- Left button -->
-            <!-- <div class="absolute left-0 bg-black px-2 h-full flex items-center justify-center">
+            <div class="absolute left-0 bg-black px-2 h-full flex items-center justify-center z-10">
                 <button class=" text-white bg-gray-900 px-0.2 py-8 rounded">
                     <i class="fa-solid fa-chevron-left mx-2"></i>
                 </button>
-            </div> -->
+            </div>
             <!-- right button  -->
-            <!-- <div class="absolute right-0 bg-black px-2 h-full flex items-center justify-center">
+            <div class="absolute right-0 bg-black px-2 h-full flex items-center justify-center z-10">
                 <button class="text-white bg-gray-900 px-0.2 py-8 rounded">
                     <i class="fa-solid fa-chevron-right mx-2"></i>
                 </button>
-            </div> -->
-            <!-- Movies -->
-            <div id="movies" class="overflow-hidden w-full h-42">
-                <div class="border border-blue-500 w-full h-full flex items-center">
-                    <div
-                        class="relative border border-white h-full w-38 mx-4 bg-[url('./img/piano-lesson.webp')] bg-cover bg-center bg-no-repeat">
-                        <h1 class="absolute -left-4 top-1/2 transform -translate-y-1/2 text-white text-7xl">1</h1>
-                    </div>
-                    <div
-                        class="relative border border-white h-full w-38 mx-4 bg-[url('./img/piano-lesson.webp')] bg-cover bg-center bg-no-repeat">
-                        <h1 class="absolute -left-4 top-1/2 transform -translate-y-1/2 text-white text-7xl">1</h1>
-                    </div>
-                    <div
-                        class="relative border border-white h-full w-38 mx-4 bg-[url('./img/piano-lesson.webp')] bg-cover bg-center bg-no-repeat">
-                        <h1 class="absolute -left-4 top-1/2 transform -translate-y-1/2 text-white text-7xl">1</h1>
-                    </div>
-                    <div
-                        class="relative border border-white h-full w-38 mx-4 bg-[url('./img/piano-lesson.webp')] bg-cover bg-center bg-no-repeat">
-                        <h1 class="absolute -left-4 top-1/2 transform -translate-y-1/2 text-white text-7xl">1</h1>
-                    </div>
-                    <!-- <img src="./img/piano-lesson.webp" alt="" class="w-62 h-80">
-                <img src="./img/prison-break.webp" alt="" class="w-62 h-80">
-                <img src="./img/rebel-ridge.webp" alt="" class="w-62 h-80">
-                <img src="./img/ride-along-2.webp" alt="" class="w-62 h-80">
-                <img src="./img/spy.webp" alt="" class="w-62 h-80">
-            </div> -->
-                </div>
             </div>
-        </div>
-
+            <!-- Movies -->
+            <div id="movies" class="w-full h-48 overflow-x-auto overflow-y-hidden whitespace-nowrap">
+                    <div
+                        class="relative inline-block w-38 h-full mx-4 bg-[url('./img/spy.webp')] bg-cover bg-center bg-no-repeat">
+                        <h1 class="absolute -left-4 top-1/2 transform -translate-y-1/2 text-white text-7xl">1</h1>
+                    </div>
+                    <div
+                        class="relative inline-block w-38 h-full mx-4 bg-[url('./img/prison-break.webp')] bg-cover bg-center bg-no-repeat">
+                        <h1 class="absolute -left-4 top-1/2 transform -translate-y-1/2 text-white text-7xl">1</h1>
+                    </div>
+            </div>
+        </div> <!-- movie-wrapper -->
+    </div>
 
 </body>
 
